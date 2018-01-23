@@ -7,7 +7,7 @@ class Message {
     return this._created;
   }
   set created(created) {
-    if (typeof created === 'undefined' || isNaN(created)) {
+    if (typeof created === 'undefined' || Number.isNaN(created)) {
       throw new Error('Invalid created');
     }
     if (Message.hasOwnProperty.call(this, '_created')) {
@@ -23,3 +23,5 @@ class Message {
     return new Message();
   }
 }
+
+module.exports = Message;
