@@ -6,8 +6,10 @@
     "rules": {
         "no-underscore-dangle": 0,
         "no-console": 0,
+        "spaced-comment": 0,
         "max-len": [
             "error", 80
-        ]
+        ],
+        "linebreak-style": ["error", "windows"]
     }
 }
